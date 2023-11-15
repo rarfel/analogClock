@@ -6,6 +6,7 @@ let rotation = 30;
 
 numbers.forEach(()=>{
     numbers[x].style.setProperty('rotate',`${rotation}deg`);
+    numbers[x].children[0].style.setProperty('rotate',`-${rotation}deg`)
     x++;
     rotation += 30;
 })
